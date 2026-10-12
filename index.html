@@ -599,9 +599,8 @@ textarea.form-control{resize:vertical;min-height:96px;}
 <div class="toast-wrap" id="toasts"></div>
 
 <script>
-// ===== AUTO DETECT API =====
-const isLocal = ['localhost','127.0.0.1'].includes(location.hostname);
-const API = isLocal ? 'http://localhost:5000' : 'https://bluepeak-backend-2czn.onrender.com';
+// ===== API =====
+const API = 'https://bluepeak-backend-2czn.onrender.com';
 
 let token = localStorage.getItem('bpf_admin');
 let curUID = null, curSUID = null, curKYCID = null, curUD = null;
